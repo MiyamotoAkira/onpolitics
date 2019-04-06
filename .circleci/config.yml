@@ -22,7 +22,6 @@ jobs:
       - attach_workspace:
           at: .
       - add_ssh_keys
-      - run: apt-get install -y openssh-client
       - run: rsync -av -e "ssh -o StrictHostKeyChecking=no" --quiet --delete-after ./public/* ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_DIRECTORY}
 
 workflows:
