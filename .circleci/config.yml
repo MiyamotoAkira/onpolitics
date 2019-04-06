@@ -21,8 +21,8 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      - run: ls public/
-      - run: rsync -r --quiet --delete-after public/* ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_DIRECTORY}
+      - run: scp -o StrictHostKeyChecking=no -r public/* ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_DIRECTORY}
+#      - run: rsync -r --quiet --delete-after public/* ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_DIRECTORY}
 
 workflows:
   version: 2
