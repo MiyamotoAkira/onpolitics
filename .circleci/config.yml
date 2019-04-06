@@ -21,7 +21,7 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      - run: rsync -r --quiet --delete-after public/* $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_DIRECTORY
+      - run: rsync -r --quiet --delete-after public/* ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_DIRECTORY}
 
 workflows:
   version: 2
