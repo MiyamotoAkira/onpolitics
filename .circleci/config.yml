@@ -1,9 +1,13 @@
 version: 2
 
-jobs:
-  build:
+references:
+  common: &common
     docker:
       - image: jorgegueorguiev/hugo
+
+jobs:
+  build:
+    <<: *common
     steps:
       - checkout
       - run: hugo
@@ -13,11 +17,11 @@ jobs:
             - public/
 
   deploy:
+    <<: *common
     steps:
       - attach_workspace:
           at: .
       - run: rsync -r --quiet --delete-after public/* $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_DIRECTORY
-
 
 workflows:
   version: 2
