@@ -22,7 +22,7 @@ jobs:
       - attach_workspace:
           at: .
       - add_ssh_keys
-      - run: apt-get install openssh-clients
+      - run: apt-get install openssh-client
       - run: rsync -av --quiet --delete-after ./public/* ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_DIRECTORY}
 
 workflows:
