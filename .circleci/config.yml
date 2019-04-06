@@ -28,4 +28,6 @@ workflows:
   site-deployment:
     jobs:
       - build
-      - deploy
+      - deploy:
+          requires:
+            - build
