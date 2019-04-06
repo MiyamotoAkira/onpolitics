@@ -7,3 +7,21 @@ jobs:
     steps:
       - checkout
       - run: hugo
+      - persist_to_workspace:
+          root: .
+          paths:
+            - public/
+
+  deploy:
+    steps:
+      - attach_workspace:
+          at: .
+      - run: rsync -r --quiet --delete-after public/* $DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_DIRECTORY
+
+
+workflows:
+  version: 2
+  site-deployment:
+    jobs:
+      - build
+      - deploy
