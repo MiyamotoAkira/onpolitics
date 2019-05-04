@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+{{ partial "head.html" . }}
+<body>
+    <div class="centered">
+        <a href="{{ .Site.BaseURL }}">Return to the Index</a>
+    </div>
+    <div class="post">
+        <h2 class="title">{{ .Title }}</h2>
+        <p>
+        <span>{{ .Date.Format "2006 January 02" }}</span>
+        {{ .Content }}
+    </div>
+    {{ partial "footer.html" . }}
+</body>
+</html>
