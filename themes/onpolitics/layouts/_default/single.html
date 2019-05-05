@@ -7,8 +7,9 @@
     </div>
     <div class="post">
         <h2 class="title">{{ .Title }}</h2>
-        <p>
-        <span>{{ .Date.Format "2006 January 02" }}</span>
+        <br/>
+        <div class="centered">{{ .Date.Format "2006 January 02" }}</div>
+        <br/>
         {{ .Content }}
     </div>
     {{ partial "footer.html" . }}
