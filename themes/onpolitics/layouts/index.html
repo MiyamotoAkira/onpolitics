@@ -5,7 +5,9 @@
         {{ partial "header.html" . }}
         <ul class="centered">
             {{ range .Paginator.Pages }}
-            <li><a href="{{ .RelPermalink }}">{{.Title}}</a></li>
+            <br/>
+            <li><a href="{{ .RelPermalink }}">{{.Title}}</a>
+            <br/>{{ .Params.sum }}</li>
             {{ end }}
         </ul>
         {{ partial "footer.html" . }}
