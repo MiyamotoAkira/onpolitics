@@ -17,4 +17,4 @@ But he is not the only one. A very infuriating fact is that it really looks like
 
 One of the few really bright spots is Hillary Benn. Usually his questions tend to be very specific, using previous comments made by the PM or the ministers, and leaving little room to manoeuvre without the answer being a straight up lie.
 
-But I wonder, how much trouble could give a group of MPs, if they talked beforehand, on pressing a specific line of questioning with follow ups, rather than a reset of the question.
+But I wonder, how much trouble could give a group of MPs to the PM or the ministers, if they talked beforehand on pressing a specific line of questioning with follow ups, rather than just resetting questions?
