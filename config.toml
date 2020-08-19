@@ -2,3 +2,6 @@ baseURL = "https://onpolitics.uk/"
 languageCode = "en-GB"
 title = "On Politics"
 theme = "onpolitics"
+
+[permalinks]
+posts = "/:year/:month/:title/"
