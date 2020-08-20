@@ -3,6 +3,9 @@ date: 2019-05-07T05:00:00+01:00
 draft: false
 sum: There is a lack of follow up on the Commons
 title: MPs Not Following Up
+tags:
+- Politics
+- Parliament
 ---
 
 Lately, I've been listening a lot to Commons proceedings. They are making my life more difficult, they are chasing away companies, they are destroying the NHS (although that has been happening since, at least, Blair was in power) so I decided to understand a bit better what happens within the House of Commons.
